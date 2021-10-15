@@ -10,7 +10,7 @@ namespace ArchitectArithmetic
             double totalCost = totalArea * 180;
 
             // Calculating the material cost for the floor plan of Taj Mahal, India.
-            double tajTotalArea = Rectangles(90.5, 90.5) - Triangle(24, 24);
+            double tajTotalArea = Rectangles(90.5, 90.5) - 2 * Rectangles(24, 24);
             double tajTotalCost = tajTotalArea * 180;
 
             // Calculating the material cost for the floor plan of the Great Mosque of Mecca.
@@ -26,7 +26,7 @@ namespace ArchitectArithmetic
             {
                 case "1":
                     {
-                        Console.WriteLine($"Your floor area is {totalArea}, and the cost of the flooring material is 180 pesos, therefore the total cost for this building will be {Math.Round(totalCost, 2)}.");
+                        Console.WriteLine($"Your floor area is {totalArea}, and the cost of the flooring material is 180 pesos, therefore the total cost for this building will be ${Math.Round(totalCost, 2)}.");
                         break;
                     }
 
